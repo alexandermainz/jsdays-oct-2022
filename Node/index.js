@@ -15,6 +15,11 @@ for (let i=0; i < 100; i++) {
 }
 console.log(names);
 
-createServer((req, res) => res.end('foo')).listen(8080, () =>
+createServer((req, res) => {
+    res.write('eins');
+    res.write('zwei');
+    res.end('foo');
+})
+.listen(8080, () =>
   console.log('listening')
 );
