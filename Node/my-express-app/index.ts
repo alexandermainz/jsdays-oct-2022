@@ -1,15 +1,10 @@
 import express from 'express';
 import { Response, Request } from 'express';
+import { User } from './user';
 
 const app = express();
 
 app.use(express.json);
-
-interface User {
-    id: number;
-    firstName: string;
-    lastName: string;
-}
 
 let users: User[] = [
     {
