@@ -4,6 +4,7 @@
   "description": "HALLO BÄRLIN",
   "main": "index.js",
   "scripts": {
+    "test": "jest",
     "start": "node index.js",
     "start:dev19": "node --watch index.js",
     "start:dev": "nodemon index.js"
